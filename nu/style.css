@@ -1,0 +1,103 @@
+/* Main attributes */
+body {
+	background:#FFFFFF;
+	font:normal 14px Arial;
+	color:#000000;
+	padding:15px 0;
+}
+
+.wrapper {
+	width:960px;
+	margin:0 auto;
+	border:1px solid #000000;
+	padding:15px;
+	border-radius:10px;
+}
+
+/* Top Menu Navigation */
+.topmenu .toptitle {
+
+}
+
+.topmenu ul.navigation {
+	text-align:left;
+	list-style-type:none;
+	position:relative;
+	margin:0;
+	padding:0;
+	line-height:26px;
+	color:#000000;
+	border-bottom:1px solid #000000;
+	width:100%;
+}
+
+.topmenu ul.navigation li {
+	margin-bottom:-1px;
+	padding:3px 10px 0 10px;
+	border:1px solid #000000;
+	background-color:#F8F8F8;
+	display:inline-block;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+.topmenu ul.navigation li.selected {
+	background-color:#FFFFFF;
+	border-bottom-color:transparent;
+}
+
+.topmenu ul.navigation li:hover {
+	background-color:#FFFFFF;
+	color:#0000FF;
+	cursor:pointer;
+}
+
+.topmenu ul.navigation li:active {
+	background-color:#F8F8F8;
+}
+
+/* Fancy Nav that follows */
+.quicknav  {
+	top:25px;
+	right:25px;
+	position:fixed;
+}
+
+.quicknav .hideshow {
+	border-top:1px solid #000000;
+	border-left:1px solid #000000;
+	border-right:1px solid #000000;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding:0 5px;
+	display:inline-block
+}
+
+.quicknav .hideshow:hover {
+	cursor:pointer
+}
+
+.quicknav table {
+	border-collapse:collapse;
+}
+
+.quicknav table tr:first-of-type {
+	border-top:1px solid #000000;
+}
+
+.quicknav table td {
+	border-right:1px solid #000000;
+	border-bottom:1px solid #000000;
+	text-align:center;
+	padding:2px 5px;
+}
+
+.quicknav table td:first-of-type {
+	border-left:1px solid #000000;
+}
+
+/* Actual Content Area */
+.content {
+	padding:15px 5px 0 5px;
+}
+
