@@ -1,0 +1,5 @@
+.insertbefore / .insertafter
+
+id+-1 change id to id-+1
+
+this.parent(tr). change id to id+-1

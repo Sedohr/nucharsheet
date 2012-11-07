@@ -61,6 +61,7 @@ body {
 	top:25px;
 	right:25px;
 	position:fixed;
+	z-index:2;
 }
 
 .quicknav .hideshow {
@@ -70,7 +71,8 @@ body {
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 	padding:0 5px;
-	display:inline-block
+	display:inline-block;
+	background:#FFFFFF;
 }
 
 .quicknav .hideshow:hover {
@@ -90,10 +92,19 @@ body {
 	border-bottom:1px solid #000000;
 	text-align:center;
 	padding:2px 5px;
+	background:#FFFFFF;
 }
 
 .quicknav table td:first-of-type {
 	border-left:1px solid #000000;
+}
+
+.quicknav table td.up {
+	border-right:none;
+}
+
+.quicknav table td.down {
+	
 }
 
 /* Actual Content Area */
@@ -101,3 +112,10 @@ body {
 	padding:15px 5px 0 5px;
 }
 
+.charsheet {
+	display:none;
+}
+
+.charsheet:first-of-type {
+	display:inline;
+}
