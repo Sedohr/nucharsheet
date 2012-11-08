@@ -33,10 +33,49 @@ $(document).ready(function() {
 	
 	// moving items on quick menu
 	$('.quicknav td.up').click(function() {
+		var $quicktablecount = $('#quicknavtable tr').length;	
 		var $currentquickid = $(this).parent('tr').prop('id');
-		var $previousquickid = $currentquickid-1;
 		
-		$('tr#'+$currentquickid).insertBefore($('tr#'+$previousquickid));
+		if (parseInt($currentquickid) === 1) {
+			alert('You reached the top of the list!');
+		}
+		
+		else {
+			var $previousquickid = parseInt($currentquickid)-1;
+			
+			$('tr#'+$currentquickid).insertBefore($('tr#'+$previousquickid));
+			
+			$('tr#'+$previousquickid).prop('id', parseInt($previousquickid)+1);
+			$($(this).parent('tr')).prop('id', parseInt($(this).parent('tr').prop('id'))-1);
+		}
+	});
+	
+	$('.quicknav td.down').click(function() {
+		var $quicktablecount = $('#quicknavtable tr').length;	
+		var $currentquickid = $(this).parent('tr').prop('id');
+		
+		if (parseInt($currentquickid) === parseInt($quicktablecount)-1) {
+			alert('You reached the end of the list!');
+		}
+		
+		else {
+			var $nextquickid = parseInt($currentquickid)+1;
+			
+			$('tr#'+$currentquickid).insertAfter($('tr#'+$nextquickid));
+			
+			$('tr#'+$nextquickid).prop('id', parseInt($nextquickid)-1);
+			$($(this).parent('tr')).prop('id', parseInt($(this).parent('tr').prop('id'))+1);
+		}	
+	});
+	
+	// deleting items on the quick menu
+	$('.quicknav button.quicknavdelbutton').click(function() {
+		$('tr.quickrow input.quicknavcheckbox').each(function() {
+			var $checkbox = $(this);
+			if ($checkbox.is(':checked')) {
+				$checkbox.parents('tr').remove();
+			}
+		});
 	});
 	
 });

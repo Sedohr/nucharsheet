@@ -101,10 +101,11 @@ body {
 
 .quicknav table td.up {
 	border-right:none;
+	cursor:pointer;
 }
 
 .quicknav table td.down {
-	
+	cursor:pointer;
 }
 
 /* Actual Content Area */
