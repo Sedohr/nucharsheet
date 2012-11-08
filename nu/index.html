@@ -20,19 +20,19 @@
 				<div class="hideshow" id="show"> > Hide > </div>
 				<table id="quicknavtable" border="0">
 					<tr>
-						<td class="up"></td><td class="up"></td><td>Check</td><td>#</td><td>Final</td><td><button type="submit" class="quicknavdelbutton" name="quicknavdelbutton">Del</button></td>
+						<td class="up"></td><td class="up"></td><td>Check</td><td>#</td><td>Final</td><td><button type="submit" class="quicknavdelbutton">Del</button></td>
 					</tr>
 					<tr class="quickrow" id="1">
-						<td class="up">^</td><td class="down">v</td><td>BAttack</td><td>5</td><td>7</td><td><input type="checkbox" class="quicknavcheckbox" name="quicknavdel" value="delete"></td>
+						<td class="up">^</td><td class="down">v</td><td>BAttack</td><td>5</td><td>7</td><td><input type="checkbox" class="quicknavcheckbox"></td>
 					</tr>
 					<tr class="quickrow" id="2">
-						<td class="up">^</td><td class="down">v</td><td>Frozen Spear</td><td>8999</td><td>9001</td><td><input type="checkbox" class="quicknavcheckbox" name="quicknavdel" value="delete"></td>
+						<td class="up">^</td><td class="down">v</td><td>Frozen Spear</td><td>8999</td><td>9001</td><td><input type="checkbox" class="quicknavcheckbox"></td>
 					</tr>
 					<tr class="quickrow" id="3">
-						<td class="up">^</td><td class="down">v</td><td>Ghetto Shield</td><td>50</td><td>55</td><td><input type="checkbox" class="quicknavcheckbox" name="quicknavdel" value="delete"></td>
+						<td class="up">^</td><td class="down">v</td><td>Ghetto Shield</td><td>50</td><td>55</td><td><input type="checkbox" class="quicknavcheckbox"></td>
 					</tr>
 					<tr class="quickrow" id="4">
-						<td class="up">^</td><td class="down">v</td><td>Derp beam</td><td>75</td><td>50</td><td><input type="checkbox" class="quicknavcheckbox" name="quicknavdel" value="delete"></td>
+						<td class="up">^</td><td class="down">v</td><td>Derp beam</td><td>75</td><td>50</td><td><input type="checkbox" class="quicknavcheckbox"></td>
 					</tr>
 				</table>
 				
@@ -49,7 +49,7 @@
 					<li id="tab2">Attacks</li>
 					<li id="tab3">Weapons/Ammo/Armor</li>
 					<li id="tab4">Checks</li>
-					<li id="tab5">Full Inventory</li>
+					<li id="tab5">Inventory</li>
 					<li id="tab6">Aspects</li>
 				</ul>
 				
@@ -57,7 +57,7 @@
 			
 			<div class="content">
 			
-				<div class="charsheet" id="chartab1">
+				<div class="charsheetpage" id="chartab1">
 				
 					<p>Herpaderpapa<br />
 					<br />
@@ -127,33 +127,69 @@
 					
 				</div>
 				
-				<div class="charsheet" id="chartab2">
+				<div class="charsheetpage" id="chartab2">
 					
 					<p>Tab 2</p>
 					
 				</div>
 				
-				<div class="charsheet" id="chartab3">
+				<div class="charsheetpage" id="chartab3">
 					
-					<p>Tab 3</p>
+					<ul class="subtabs" id="subtabs1">
+						<li class="selected" id="subtab1">Weapons/Ammo</li>
+						<li id="subtab2">Armor/Equipment</li>
+					</ul>
+					
+					<div class="nusubpage firstsubpage" id="nusubtab1"><p><br />Tab 3 - Weapons/Ammo</p></div>
+					
+					<div class="nusubpage" id="nusubtab2"><p><br />Tab 3 - Armor/Equipment</p></div>
 					
 				</div>
 				
-				<div class="charsheet" id="chartab4">
+				<div class="charsheetpage" id="chartab4">
 					
 					<p>Tab 4</p>
 					
 				</div>
 				
-				<div class="charsheet" id="chartab5">
+				<div class="charsheetpage" id="chartab5">
 					
-					<p>Tab 5</p>
+					<ul class="subtabs" id="subtabs2">
+						<li class="selected" id="subtab3">Consumables</li>
+						<li id="subtab4">Inventory</li>
+					</ul>
+					
+					<div class="nusubpage firstsubpage" id="nusubtab3"><p><br />Tab 5 - Consumables</p></div>
+					
+					<div class="nusubpage" id="nusubtab4"><p><br />Tab 5 - Inventory</p></div>
 					
 				</div>
 				
-				<div class="charsheet" id="chartab6">
+				<div class="charsheetpage" id="chartab6">
 					
-					<p>Tab 6</p>
+					<ul class="subtabs" id="subtabs3">
+						<li class="selected" id="subtab5">Core</li>
+						<li id="subtab6">Physical</li>
+						<li id="subtab7">Combat</li>
+						<li id="subtab8">Knowledge</li>
+						<li id="subtab9">Charisma</li>
+						<li id="subtab10">Technology</li>
+						<li id="subtab11">Focus</li>
+					</ul>
+					
+					<div class="nusubpage firstsubpage" id="nusubtab5"><p><br />Tab 6 - Core</p></div>
+					
+					<div class="nusubpage" id="nusubtab6"><p><br />Tab 6 - Physical</p></div>
+					
+					<div class="nusubpage" id="nusubtab7"><p><br />Tab 6 - Combat</p></div>
+					
+					<div class="nusubpage" id="nusubtab8"><p><br />Tab 6 - Knowledge</p></div>
+					
+					<div class="nusubpage" id="nusubtab9"><p><br />Tab 6 - Charisma</p></div>
+					
+					<div class="nusubpage" id="nusubtab10"><p><br />Tab 6 - Technology</p></div>
+					
+					<div class="nusubpage" id="nusubtab11"><p><br />Tab 6 - Focus</p></div>
 					
 				</div>
 				

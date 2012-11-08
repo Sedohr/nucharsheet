@@ -1,0 +1,7 @@
+aspects page has sub pages for each aspect group. Core/physical/etc.
+
+Have the aspects shown in a table format like I have. Maybe have them moveable? Up/down is possible, but seems unessecary.
+
+Click purchase aspect button next to table. check if they have enough free points. If they do Bring up prompt "Progress 'x' at the cost of 'y'?" y/n. if yes "Are you sure"? y/n. Once accepted, change total points, or free points (whichever system is used, see below for options) and prompt user with changes that were made. "You have unlocked br 'x'. You have increased br 'y' by 'z'. Total is 'a'."
+
+Two ideas for aspect system. Either show how many aspect points you have, and how many you have free. Or show how many you have spent and how many you have. Or both.

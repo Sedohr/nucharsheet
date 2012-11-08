@@ -1,0 +1,37 @@
+Add item button.
+
+ask name, amount, weight, maybe if equipped?
+
+too simple?
+
+Have a slot for armor? Ask for type (civ/light/med/heavy), and nr bonus? Maybe can set it up so it knows negatives for each nr level?
+
+
+How to handle accesories?
+
+Asking for bonuses from item upon input seems unreasonable, at least on a coding level. I would have to add in the possibility for ANY check, which would mean adding them all in for request.
+
+Maybe.........(thinking). I'm going to have all the checks in the code somehow eventually because of all the aspects. Maybe... Actually ask for what check is enchanced? As long as it is spelled correctly, I can make names turn into variables which I can use. I would have to add a loop back to the if statement, or something. That way if the check is spelled wrong, it takes them back to the input for the check name.
+
+I'm not sure on that one. I think I'll ponder on it a bit more, and might ask for some input.
+
+
+Need a way to edit values on the fly as well. Not sure if 'equipped' tab is really needed. Maybe, since you can hold multiple items. I can make it so it matters which weapon you have equipped, but that seems like a pain in the ass for the user. Need to think about attacks with weapons.
+
+Maybe a focus engine slot. I could just add in the values for each focus engine level, and based on what level they have equipped add the values on the fly.
+
+I think I should make multiple sub tabs for inventory. Weapons, consumables, accessories, armor(?), misc. Armor seems like a waste to have its own tab. Maybe put it on accessories tab. Accesories could be 'equipment', but that also counts weapons. Dunno.
+
+Need a way to use consumables. Mostly for med packs and limited buff items. Press button, use item, add stats/heal. hhmmmm. Need a way to figure out when to remove temp buffs... Maybe make a tiny pop-up window on the side that informs the use of temp buffs currently active, turns/time it has, and a button to remove said buff personally (so they can remove the bonus when it's over. I don't think there is a way to track it, other than having the user tell it a turn has passed.)
+
+Using consumes would be useful for easy med pack consumption. For the med pack/armor rep kit I can give a pop up option for "self or other". It then tells them the amount healed/repaired, and if on self automatically heal/repair their hp value. (need an option to tell damage done. Pop up asks for damage, automatically reduces damage with nr and reduces it from current hp. Have a pop up saying exact info. Need to have an option for shields/int fields as well...)
+
+weapons..... not sure. Maybe I can just set it up so they can add multiple tables or rows with each weapon.... I think having an equipped for weapons might be better, and having a table with their attacks so they can auto update. Would need to ask bonuses to attack/damage. I think this means I'll have to have two check pages. One for attacks, one for everything else. Not sure how to show damage.... Maybe on the attacks page? 
+
+Accessories can be pretty easy actually. Maybe. Like before, just ask for name, input check type? and then amount.
+
+Probably about 90% of the values need to be able to be changed on the fly when added. Need to figure out how to do that, without making it a pain to do so, or ugly. I'll also add a 'user' input on 99% of checks/attacks/etc. In case people are lazy for consumables and just expect to always be using them. Need a way to have people turn on/off temp abilities.
+
+Need a save/update option. Save is obvious, dunno about update, or on which pages to use it. Maybe just next to the save on top. Not sure how jquery/javascript/html handle numerical updates and additions on the fly, since most are done on document load. I might need to make a function that re-adds/subtracts all the bonuses then update the check numbers, and have the update button run the function.
+
+Lots of questions for weapons and items V_V

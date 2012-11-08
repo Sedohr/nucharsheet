@@ -9,7 +9,7 @@ $(document).ready(function() {
 		
 		var $navid = $(this).prop('id');
 		
-		$('.charsheet').css('display', 'none');
+		$('.charsheetpage').css('display', 'none');
 		$('#char'+$navid).stop(true,true).fadeIn(850);
 	});
 	
@@ -77,5 +77,22 @@ $(document).ready(function() {
 			}
 		});
 	});
+	
+	// sub tabs for multiple subpages
+	$('.subtabs li').click(function() {
+		
+		var $subulid = $(this).parent('ul').prop('id');
+		
+		if (! $(this).hasClass('selected')) {
+			$('#'+$subulid+' li').removeClass('selected');
+			$(this).addClass('selected');
+		}
+		
+		var $subtabid = $(this).prop('id');
+		var $subtabpage = $(this).parents('.charsheetpage').prop('id');
+		
+		$('#'+$subtabpage+' .nusubpage').css('display', 'none');
+		$('#nu'+$subtabid).stop(true,true).fadeIn(850);
+		});
 	
 });

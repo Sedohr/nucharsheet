@@ -20,7 +20,7 @@ body {
 }
 
 .topmenu ul.navigation {
-	text-align:left;
+	text-align:center;
 	list-style-type:none;
 	position:relative;
 	margin:0;
@@ -113,10 +113,58 @@ body {
 	padding:15px 5px 0 5px;
 }
 
-.charsheet {
+.charsheetpage {
 	display:none;
 }
 
-.charsheet:first-of-type {
+.charsheetpage:first-of-type {
 	display:inline;
+}
+
+/* Sub pages */
+.charsheetpage ul.subtabs {
+	list-style-type:none;
+	text-align:center;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	line-height:26px;
+	width:95%;
+	color:#000000;
+	border-bottom:1px solid #000000;
+}
+
+.charsheetpage ul.subtabs li {
+	margin:0 10px -1px 10px;
+	padding:3px 10px 0 10px;
+	border-bottom:1px solid #000000;
+	border-top:1px solid #000000;
+	background-color:#FFFFFF;
+	display:inline-block;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+.charsheetpage ul.subtabs li:hover {
+	background-color:#FFFFFF;
+	color:#0000FF;
+	cursor:pointer;
+}
+
+.charsheetpage ul.subtabs li.selected {
+	background-color:#FFFFFF;
+	border-bottom-color:transparent;
+}
+
+.charsheetpage ul.subtabs li:active {
+	background-color:#F8F8F8;
+}
+
+.charsheetpage .nusubpage {
+	display:none;
+}
+
+.charsheetpage .nusubpage.firstsubpage {
+	display:block;
 }
